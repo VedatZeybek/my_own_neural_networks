@@ -30,6 +30,7 @@ for neuron_weigths, bias in zip (weights, biases):
 	
 print(output_layer)
 
+
 #numpy version 
 import numpy as np
 
@@ -45,8 +46,8 @@ output = np.dot(weights, inputs) + biases
 
 print(output) 
 
-#more batches
 
+#more batches (transpose technique)
 inputs =  [[1, 2, 3, 2.5],
 		   [2.0, 5.0 , -1.0 , 2.0],
 		   [-1.5, 2.7, 3.3, -0.8]]
@@ -60,3 +61,16 @@ biases = [2, 3, 0.5]
 output = np.dot(inputs, np.array(weights).T) + biases
 
 print(output)
+
+
+#object layers
+inputs =  [[1, 2, 3, 2.5],
+		   [2.0, 5.0 , -1.0 , 2.0],
+		   [-1.5, 2.7, 3.3, -0.8]]
+
+class Layer_Dense:
+	def __init__(self):
+		pass
+	def forward():
+		pass
+	
