@@ -1,3 +1,5 @@
+#Neural Networks from Scratch in Python
+
 inputs = [1, 2, 3, 2.5]
 
 weights1 = [0.2, 0.8, -0.5, 1.0 ]
@@ -44,7 +46,7 @@ biases = [2, 3, 0.5]
 
 output = np.dot(weights, inputs) + biases
 
-print(output) 
+print(output)
 
 
 #more batches (transpose technique)
@@ -62,15 +64,3 @@ output = np.dot(inputs, np.array(weights).T) + biases
 
 print(output)
 
-
-#object layers
-inputs =  [[1, 2, 3, 2.5],
-		   [2.0, 5.0 , -1.0 , 2.0],
-		   [-1.5, 2.7, 3.3, -0.8]]
-
-class Layer_Dense:
-	def __init__(self):
-		pass
-	def forward():
-		pass
-	
