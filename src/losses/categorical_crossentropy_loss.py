@@ -1,6 +1,5 @@
 import numpy as np
 
-
 # --- Categorical Crossentropy Loss ---
 class Loss:
     def calculate(self, output, y):

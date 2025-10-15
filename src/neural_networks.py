@@ -12,10 +12,10 @@ nnfs.init()
 X, y = spiral_data(100, 3)
 
 # --- Model ---
-dense1 = Layer_Dense(2, 64)
-activation1 = Activation_ReLU()
-dense2 = Layer_Dense(64, 3)
-loss_activation = Activation_Softmax_Loss_CategoricalCrossentropy()
+dense1 = Layer_Dense(2, 64) #backpropagation yapıyor.
+activation1 = Activation_ReLU() # ReLu sana (non-linearity) verir. Yani karmaşık şekiller / eğrileri manipüle edebilirsin.
+dense2 = Layer_Dense(64, 3) #ikinci nöral katman.
+loss_activation = Activation_Softmax_Loss_CategoricalCrossentropy() # 
 
 # --- Forward pass ---
 dense1.forward(X)
