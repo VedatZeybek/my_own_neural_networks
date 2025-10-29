@@ -107,4 +107,5 @@ plt.xlabel("Iteration")
 plt.ylabel("Weight value")
 plt.legend()
 
-plt.show()
+plt.tight_layout()
+plt.savefig("regularization_weights.png")  # Kaydedilen dosya
